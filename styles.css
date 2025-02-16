@@ -1,0 +1,156 @@
+/* General Styles */
+body {
+font-family: 'Arial', sans-serif;
+margin: 0;
+padding: 20px;
+background-color: #cedded;
+color: #333;
+}
+
+.cart-container {
+max-width: 600px;
+margin: 0 auto;
+background: #fff;
+padding: 25px;
+border-radius: 12px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+font-size: 24px;
+margin-bottom: 20px;
+color: #2c3e50;
+text-align: center;
+}
+
+h2 {
+font-size: 20px;
+margin-bottom: 15px;
+color: #34495e;
+}
+
+/* Cart Items */
+.cart-items {
+margin-bottom: 20px;
+}
+
+.cart-item {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 12px 0;
+border-bottom: 1px solid #e9ecef;
+}
+
+.cart-item:last-child {
+border-bottom: none;
+}
+
+.cart-item span {
+font-size: 16px;
+color: #495057;
+}
+
+/* Cart Summary */
+.cart-summary {
+background: #f8f9fa;
+padding: 15px;
+border-radius: 8px;
+margin-bottom: 20px;
+}
+
+.cart-summary p {
+margin: 8px 0;
+font-size: 16px;
+color: #495057;
+}
+
+.cart-summary p span {
+font-weight: bold;
+color: #2c3e50;
+}
+
+/* Promo Code Section */
+.promo-code-section {
+background: #f8f9fa;
+padding: 15px;
+border-radius: 8px;
+}
+
+.promo-code-section h2 {
+margin-bottom: 10px;
+}
+
+.promo-code-section input[type="text"] {
+padding: 10px;
+width: calc(70% - 12px);
+margin-right: 10px;
+border: 1px solid #ced4da;
+border-radius: 6px;
+font-size: 14px;
+outline: none;
+transition: border-color 0.3s ease;
+}
+
+.promo-code-section input[type="text"]:focus {
+border-color: #28a745;
+}
+
+.promo-code-section button {
+padding: 10px 15px;
+background-color: #28a745;
+color: #fff;
+border: none;
+border-radius: 6px;
+font-size: 14px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.promo-code-section button:hover {
+background-color: #218838;
+}
+
+#promo-message {
+margin-top: 10px;
+font-size: 14px;
+font-weight: bold;
+text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+.cart-container {
+    padding: 15px;
+}
+
+h1 {
+    font-size: 22px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+.cart-item span {
+    font-size: 14px;
+}
+
+.cart-summary p {
+    font-size: 14px;
+}
+
+.promo-code-section input[type="text"] {
+    width: calc(60% - 12px);
+    font-size: 12px;
+}
+
+.promo-code-section button {
+    padding: 8px 12px;
+    font-size: 12px;
+}
+
+#promo-message {
+    font-size: 12px;
+}
+}

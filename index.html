@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Shopping Cart</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="cart-container">
+    <h1>Shopping Cart</h1>
+    <div class="cart-items">
+      <!-- Example Cart Items -->
+      <div class="cart-item">
+        <span>Product: Joggers</span>
+        <span>$20.00</span>
+      </div>
+      <div class="cart-item">
+        <span>Product: T-shirt</span>
+        <span>$30.00</span>
+      </div>
+    </div>
+
+    <!-- Cart Summary -->
+    <div class="cart-summary">
+      <h2>Cart Summary</h2>
+      <p>Subtotal: <span id="subtotal">$50.00</span></p>
+      <p>Discount: <span id="discount">$0.00</span></p>
+      <p>Final Total: <span id="final-total">$50.00</span></p>
+    </div>
+
+    <!-- Promo Code Section -->
+    <div class="promo-code-section">
+      <h2>Apply Promo Code</h2>
+      <input type="text" id="promo-code" placeholder="Enter promo code">
+      <button id="apply-promo">Apply</button>
+      <p id="promo-message"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
